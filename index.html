@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Compras</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Compras</h1>
+        <form id="compraForm">
+            <div class="input-group">
+                <label for="nomeProduto">Nome do Produto:</label>
+                <input type="text" id="nomeProduto" placeholder="Digite o nome do produto" required>
+            </div>
+            <div class="input-group">
+                <label for="precoProduto">Preço do Produto (R$):</label>
+                <input type="number" id="precoProduto" placeholder="Digite o preço do produto" required min="0">
+            </div>
+            <div class="input-group">
+                <label for="parcelas">Número de Parcelas:</label>
+                <input type="number" id="parcelas" placeholder="Digite o número de parcelas" required min="0">
+            </div>
+            <button type="submit">Calcular</button>
+        </form>
+        <div id="resultado"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
